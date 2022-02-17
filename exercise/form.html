@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>student registration</h1>
+    <form action="request.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="stu_name">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="stu_email">
+        <br><br>
+        <label for="password">password</label>
+        <input type="password" id="password" name="stu_password" required>
+        <br><br>
+        <label for="phone">phone</label>
+        <input type="number" id="number" name="stu_phone" required placeholder="enter ph number" >
+        <br><br>
+        <label for="passport">passport</label>
+        <input type="file" accept=".pdf" id="passport" name="stu_passport">
+        <br><br>
+        <label for="years">years</label>
+        <select name="years" id="years">
+            <option value="choose years"></option>
+            <option value="1">first year</option>
+            <option value="2"selected>second year</option>
+            <option value="3">third year</option>
+
+        </select>
+        <br><br>
+        <label for="dob">birthday</label>
+        <input type="date" id="dab" name="stu_dab">
+        <br><br>
+        <label for="">Hobbies</label>
+        <input type="checkbox" name="reading" id="reading"><label for="reading">reading</label>
+        <input type="checkbox" name="travelling" id="travelling"><label for="travelling">travelling</label>
+        <br><br>
+        <label for="">Gender</label>
+        <br><br>
+        <input type="radio" name="gender" id="male"><label for="male">male</label>
+        <input type="radio" name="gender" id="femal"><label for="female">female</label>
+        <input type="radio" name="gender" id="other"><label for="other">other</label>
+        <br><br>
+        <label for="address">address</label>
+        <textarea name="stu_address" id="address" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="time">
+        <input type="detemine-local">
+        <input type="week">
+        <br>
+        <input type="color">
+        <input type="range" min="0" max="100" value="20">
+        <input type="text" value="i am an engineer" redonly>
+
+        <br><br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
